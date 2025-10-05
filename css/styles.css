@@ -25,11 +25,13 @@ img {
 
 .gallery-item {
   list-style: none;
-  cursor: pointer;
-}
+ }
+ .gallery-item:hover{
+    cursor: url('../images/hand.png'), pointer;
+ }
 
 .basicLightbox {
-  background: #2e2f42 !important;
+  background: #2e2f42;
 }
 
 .lightbox-container {
