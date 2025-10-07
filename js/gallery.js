@@ -69,12 +69,13 @@ const galleryList = document.querySelector('.gallery');
 const makeImageMarkup = element => {
     const { preview, original, description } = element;
     return `<li class="gallery-item">
-  <a class="gallery-link" href="large-image.jpg">
+  <a class="gallery-link" href="${original}">
     <img
       class="gallery-image"
       src="${preview}"
       data-source="${original}"
-      alt="${description}"
+      alt="${description}" 
+      loading="lazy"
     />
   </a>
 </li>
